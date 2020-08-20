@@ -17,6 +17,8 @@ import { SwUpdate } from "@angular/service-worker";
 })
 export class PwaService {
 
+    private currentUpdate = false;
+
     constructor(
         private appRef: ApplicationRef,
         private swUpdate: SwUpdate) {
@@ -27,6 +29,14 @@ export class PwaService {
                     this.swUpdate.activateUpdate().then(() => document.location.reload());
                 });
         }
+    }
+
+    isCurrentUpdate(): boolean {
+        return this.currentUpdate
+    }
+
+    changeCurrentUpdate(currentUpdate: boolean): void {
+        this.currentUpdate = currentUpdate;
     }
 
     checkForUpdate(): Observable<any> {

@@ -1,4 +1,5 @@
-<div id="splash-screen" class="welcome" *ngIf="show" @fadeOut>
+<div id="splash-screen" class="welcome" *ngIf="show" @fadeOutLate>
     <span id="splash-overlay" class="splash"></span>
-    <img id="welcome" src="../assets/icons/icon-192x192.png" class="z-depth-4">
+    <span id="splash-overlay" class="splash-white" *ngIf="show" @borderIn></span>
+    <img id="welcome" src="../assets/icons/icon-192x192.png" class="z-depth-4" *ngIf="show" @fadeOut>
 </div>
