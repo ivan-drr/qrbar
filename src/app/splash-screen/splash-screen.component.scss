@@ -1,0 +1,81 @@
+.splash-screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+  
+  /* start welcome animation */
+  
+  div.welcome {
+    background: transparent;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .welcome .splash {
+    height: 0px;
+    padding: 0px;
+    border: 130em solid #4a4833;
+    position: fixed;
+    left: 50%;
+    top: 100%;
+    display: block;
+    box-sizing: initial;
+    overflow: hidden;
+  
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .welcome #welcome {
+    background: transparent;
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: init 0.4s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1.2s 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+  }
+
+  @keyframes init {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    100% {
+      width: 72px;
+      height: 72px;
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveDown {
+    0% {
+      top: 50%;
+    }
+    33% {
+      top: 45%;  
+    }
+    100% {
+      top: 50%;
+    }
+  }
+  
+  @keyframes hide {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      width: 0%;
+      height: 0%;
+    }
+  }
