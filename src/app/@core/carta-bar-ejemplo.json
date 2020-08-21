@@ -1,0 +1,162 @@
+{
+    "restaurant": {
+        "name": "Bar el arrecife",
+        "menu": [
+            {
+                "sectionName": "Bebidas",
+                "list": [
+                    {
+                        "name": "cocacola",
+                        "price": 1.5
+                    },
+                    {
+                        "name": "Fanta de naranja",
+                        "price": 1
+                    },
+                    {
+                        "name": "Fanta de limón",
+                        "price": 1
+                    },
+                    {
+                        "name": "7up",
+                        "price": 1
+                    },
+                    {
+                        "name": "Aquarius",
+                        "price": 1
+                    },
+                    {
+                        "name": "Café",
+                        "price": 1
+                    },
+                    {
+                        "name": "Café bombón",
+                        "price": 1.8
+                    },
+                    {
+                        "name": "Colacao",
+                        "price": 1
+                    },
+                    {
+                        "name": "Caña",
+                        "brand": [
+                            {
+                                "brandName": "Cruzcampo",
+                                "price": 1
+                            },
+                            {
+                                "brandName": "Coronita",
+                                "price": 1
+                            },
+                            {
+                                "brandName": "Paulaner",
+                                "price": 2
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Jarra de cerveza",
+                        "brand": [
+                            {
+                                "brandName": "Cruzcampo",
+                                "price": 1
+                            },
+                            {
+                                "brandName": "Coronita",
+                                "price": 1
+                            },
+                            {
+                                "brandName": "Paulaner",
+                                "price": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "sectionName": "Bocadillos",
+                "list": [
+                    {
+                        "name": "Pepito de pollo",
+                        "price": 2.5
+                    },
+                    {
+                        "name": "Pepito de lomo",
+                        "price": 2.5
+                    }
+                ]
+            },
+            {
+                "sectionName": "Tapas",
+                "list": [
+                    {
+                        "name": "Ensaladilla",
+                        "ration": [
+                            {
+                                "rationName": "Tapa",
+                                "price": 2
+                            },
+                            {
+                                "rationName": "Media",
+                                "price": 4
+                            },
+                            {
+                                "rationName": "Entera",
+                                "price": 6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "sectionName": "Hamburguesas",
+                "list": [
+                    {
+                        "name": "Hamburguesa de pollo",
+                        "prize": 4
+                    }
+                ]
+            },
+            {
+                "sectionName": "Pizzas",
+                "list": [
+                    {
+                        "name": "Pizza con piña",
+                        "ration": [
+                            {
+                                "rationName": "Pequeña",
+                                "price": 6
+                            },
+                            {
+                                "rationName": "Mediana",
+                                "price": 8
+                            },
+                            {
+                                "rationName": "Familiar",
+                                "price": 10
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "sectionName": "Platos",
+                "list": [
+                    {
+                        "name": "Solomillo a la pimienta",
+                        "prize": 6
+                    }
+                ]
+            },
+            {
+                "sectionName": "Extras",
+                "list": [
+                    {
+                        "name": "Alioli",
+                        "price": 0.5
+                    }
+                ]
+            }
+        ]
+    }
+}

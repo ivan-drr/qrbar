@@ -8,6 +8,8 @@
       "@app/*": ["src/app/*"],
       "@core/*": ["src/app/@core/*"]
     },
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "files": [
     "src/main.ts",

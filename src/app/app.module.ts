@@ -12,12 +12,14 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { SidenavElementComponent } from './sidenav-element/sidenav-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashScreenComponent,
-    SidenavComponent
+    SidenavComponent,
+    SidenavElementComponent
   ],
   imports: [
     BrowserModule,

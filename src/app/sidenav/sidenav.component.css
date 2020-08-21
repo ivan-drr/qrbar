@@ -1,0 +1,16 @@
+.container {
+    position: absolute;
+    height: 100%;
+}
+
+.mat-drawer-container {
+    background-color: transparent;    
+}
+
+#menu-icon {
+    color: black;
+}
+
+#back-menu-icon {
+    color: white;
+}
