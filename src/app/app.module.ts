@@ -12,14 +12,18 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 import { SidenavElementComponent } from './sidenav-element/sidenav-element.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashScreenComponent,
     SidenavComponent,
-    SidenavElementComponent
+    SidenavElementComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +32,7 @@ import { SidenavElementComponent } from './sidenav-element/sidenav-element.compo
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
+    MatGridListModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
