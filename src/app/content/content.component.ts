@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuService } from '@core/services/menu.service';
-
-export interface Tile {
-  color: string;
-  cols: number;
-  rows: number;
-  text: string;
-}
+import { DrinkService } from '@core/services/drink.service';
 
 @Component({
   selector: 'app-content',
@@ -16,28 +9,25 @@ export interface Tile {
 
 export class ContentComponent implements OnInit {
 
+  breakpoint: number;
   data: any = {
     "restaurant": {
       "menu": []
     }
   };
 
-  tiles: Tile[] = [
-    {text: 'One', cols: 1, rows: 64, color: 'lightblue'},
-    {text: 'Two', cols: 5, rows: 64, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 64, color: 'lightpink'},
-    {text: 'Four', cols: 5, rows: 64, color: '#DDBDF1'},
-    {text: 'One', cols: 1, rows: 64, color: 'lightblue'},
-    {text: 'One', cols: 13, rows: 9, color: 'lightblue'},
-  ];
-
-  constructor(private readonly menuService: MenuService) {}
+  constructor(private readonly drinkService: DrinkService) {}
 
   ngOnInit(): void {
-    this.data = this.menuService.getData();
-    if (Object.keys(this.data).length === 0) {
-      // handle menu is empty
-    }
+    this.data = this.drinkService.getDrinks();
+    console.log(this.data);
+    
+
+    this.breakpoint = (window.innerWidth <= 400) ? 1 : 6;
+  }
+
+  onResize(event) {
+    this.breakpoint = (event.target.innerWidth <= 400) ? 1 : 6;
   }
 
 }
